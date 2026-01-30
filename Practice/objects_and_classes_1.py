@@ -33,3 +33,58 @@ print(f"{plane1.wingspan} and {plane1.weight}")
 # in most cases we won't delete objects because of Python's automatic memory management (garbage collection).
 del plane1
 
+# Practice Part 2: Student info
+class Student:
+    def __init__(self, name, student_id):
+        self.name = name
+        self.student_id = student_id
+    def display_info(self):
+        print(f"Student Name: {self.name}\nStudent ID: {self.student_id}")
+
+student1 = Student("Trent",634086)
+student1.display_info()
+
+
+#Practice Part 3 Rectangle
+
+class Rectangle:
+    def __init__(self, width, height):
+        self.width = width
+        self.height = height
+    def area(self):
+        return self.width*self.height
+    def perimeter(self):
+        return (self.width*2) + (self.height*2)
+    
+    def display_calculations(self):
+        print(f"The area is {self.area()}. The perimiter is {self.perimeter()}")
+
+rectangle1 = Rectangle(10,10)
+rectangle1.display_calculations()
+
+# Level 2: Methods & State
+
+# 4. Bank Account
+# 
+# Create a class BankAccount with:
+# Attributes: owner, balance
+# Methods:
+# deposit(amount)
+# withdraw(amount) (don’t allow balance to go negative)
+
+# 5. Counter
+#
+# Create a class Counter that:
+# Starts at 0
+# Has methods:
+# increment()
+# decrement()
+# reset()
+
+# 6. Book Tracker
+# 
+# Create a class Book with:
+# Attributes: title, author, is_checked_out
+# Methods:
+# check_out()
+# return_book()
