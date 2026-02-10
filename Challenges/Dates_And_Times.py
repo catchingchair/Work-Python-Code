@@ -4,11 +4,11 @@
 import calendar
 
 def count_days(year, month, whichday):
-    daycount = 0
-    weekslist = calendar.monthcalendar(year, month)
-    for week in weekslist:
+    count = 0
+    weeks = calendar.monthcalendar(year, month)
+    for week in weeks:
         if week[whichday] != 0:
-            daycount += 1
-    return daycount
+            count += 1
+    return count
 
     

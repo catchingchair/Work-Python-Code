@@ -12,4 +12,12 @@
 sample_file = open("textfile.txt","r")
 
 if sample_file.mode == 'r':
-    print(sample_file.read())
+    # use the read() function to read the entire file
+    contents = sample_file.read()
+    print(contents)
+
+    # same result, just reads line by line and printing it. 
+    # .readlines() returns a list of lines from the stream
+    file_lines = sample_file.readlines()
+    for line in file_lines:
+        print(line)
